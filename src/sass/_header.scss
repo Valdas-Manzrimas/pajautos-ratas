@@ -116,7 +116,6 @@
       color: #252b33;
       @include transition(all 0.2s ease);
       position: relative;
-      position: relative;
     }
     &:hover > a:not(.btn),
     & > a.active:not(.btn) {

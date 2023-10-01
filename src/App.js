@@ -1,5 +1,4 @@
 import './App.scss';
-import Header from './components/Header';
 import Home from './components/Home';
 import AboutUs from './components/About';
 import Services from './components/Services';
@@ -54,18 +53,11 @@ function App() {
 
   return (
     <>
-      <div
-        style={{ position: 'relative' }}
-        className={classicHeader ? '' : 'side-header'}
-      >
+      <div style={{ position: 'relative' }} className={'layout'}>
         {isLoading && <PreLoader></PreLoader>}
 
         <div id='main-wrapper'>
-          {classicHeader ? (
-            <ClassicHeader handleNavClick={handleNavClick}></ClassicHeader>
-          ) : (
-            <Header handleNavClick={handleNavClick}></Header>
-          )}
+          <ClassicHeader></ClassicHeader>
 
           <div id='content' role='main'>
             <Home
@@ -88,6 +80,7 @@ function App() {
             <Contact
               classicHeader={classicHeader}
               darkTheme={darkTheme}
+              handleNavClick={handleNavClick}
             ></Contact>
           </div>
           <Footer

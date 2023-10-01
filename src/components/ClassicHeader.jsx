@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Tooltip } from './Tooltip';
 import { Link } from 'react-scroll';
 
-const ClassicHeader = ({ handleNavClick }) => {
+const ClassicHeader = () => {
   const [stickyHeader, setStickyHeader] = useState(false);
   const [isNavModalClose, setIsNavModalClose] = useState(true);
 
@@ -93,23 +93,6 @@ const ClassicHeader = ({ handleNavClick }) => {
                     spy
                     activeClass='active'
                     className='nav-link'
-                    to='home'
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsNavModalClose(true);
-                    }}
-                  >
-                    Pradžia
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link
-                    smooth
-                    duration={500}
-                    style={{ cursor: 'pointer' }}
-                    spy
-                    activeClass='active'
-                    className='nav-link'
                     to='services'
                     onClick={(e) => {
                       e.preventDefault();
@@ -159,8 +142,8 @@ const ClassicHeader = ({ handleNavClick }) => {
                     duration={500}
                     style={{ cursor: 'pointer' }}
                     spy
-                    activeClass='active'
                     className='nav-link'
+                    activeClass='active'
                     to='contact'
                     onClick={(e) => {
                       e.preventDefault();

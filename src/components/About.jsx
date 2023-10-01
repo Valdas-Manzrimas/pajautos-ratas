@@ -11,7 +11,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
         <div className='position-relative d-flex text-center mb-5'>
           <h2
             className={
-              'text-24  text-uppercase fw-600 w-100 mb-0 ' +
+              'text-20  text-uppercase fw-600 w-100 mb-0 ' +
               (darkTheme ? 'text-muted opacity-1' : 'text-light opacity-4')
             }
           >
@@ -28,14 +28,16 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
           </p>
         </div>
         {/* Heading end*/}
-        <div className='row gy-5'>
-          <h2
-            className={'text-7 fw-600 mb-3 ' + (darkTheme ? 'text-white' : '')}
-          >
-            Grupę veda:
-          </h2>
+        <div className='gy-5 d-flex'>
           {/* About me content start */}
-          <div className='row d-flex align-items-center'>
+          <div className='d-flex flex-column align-items-center w-50'>
+            <div className='team'>
+              <img
+                src='images/Dalia_profilis.png'
+                alt='Dalia profilis'
+                className=' img-fluid img-responsive'
+              />
+            </div>
             <div className='col-lg-9 col-xl-9 text-center text-lg-start'>
               <p className={darkTheme ? 'text-white-50' : ''}>
                 <span className='text-primary text-5'>Dalia Eigėlienė</span> -
@@ -45,20 +47,14 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 turinti medicininį išsilavinimą.
               </p>
             </div>
-            <div className='col-lg-3 col-xl-3 d-flex justify-content-center mb-2'>
-              <img
-                src='images/Dalia_profilis.png'
-                alt='Dalia profilis'
-                className='img-fluid'
-              />
-            </div>
           </div>
-          <div className='row d-flex align-items-center'>
-            <div className='col-lg-3 col-xl-3 d-flex justify-content-center'>
+
+          <div className='d-flex flex-column align-items-center w-50'>
+            <div className='team'>
               <img
                 src='images/Aurimas_profilis.png'
                 alt='Aurimas profilis'
-                className='img-fluid'
+                className='img-fluid img-responsive'
               />
             </div>
             <div className='col-lg-9 col-xl-9 text-center text-lg-start'>

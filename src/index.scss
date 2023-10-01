@@ -1,0 +1,21 @@
+@import 'sass/stylesheet.scss';
+
+#root {
+  background-color: $body-bg;
+}
+
+.layout {
+  margin: 0 12rem 0 12rem;
+
+  @media only screen and (max-width: 1585px) {
+    margin: 0 10rem 0 10rem;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    margin: 0 7rem 0 7rem;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    margin: 0;
+  }
+}

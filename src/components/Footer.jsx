@@ -4,7 +4,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
   return (
     <footer
       id='footer'
-      className={'section ' + (darkTheme ? 'footer-dark bg-dark-1' : '')}
+      className={'section' + (darkTheme ? 'footer-dark bg-dark-1' : '')}
     >
       <div className={'container ' + (classicHeader ? '' : 'px-lg-5')}>
         <div className='row'>

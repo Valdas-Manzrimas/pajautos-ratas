@@ -1,8 +1,7 @@
 import React from 'react';
-import Typewriter from 'typewriter-effect';
 import videobg from '../videos/landing_video.mp4';
 
-const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
+const Home = ({ handleNavClick }) => {
   return (
     <section id='home'>
       <div className='hero-wrap'>
@@ -26,29 +25,17 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
           ></video>
         </div>
 
-        <div className='hero-content section d-flex min-vh-100'>
+        <div className='hero-content container d-flex'>
           <div className='container my-auto'>
             <div className='row'>
-              <div className='col-12 text-center'>
-                <p className='text-7 fw-500 text-white mb-2 mb-md-3'>
+              <div className={'col-12 text-center '}>
+                {/* <p className='text-7 fw-500 text-white mb-2 mb-md-3'>
                   Kviečiame jus į
-                </p>
+                </p> */}
                 <p className='text-5 text-light mb-2'>
                   12-kos gyvų susitikimų ciklą Vilniuje, nuo rugsėjo 19 d.
                 </p>
                 <h2 className='text-16 fw-600 text-white mb-2 mb-md-3'>
-                  {/* <Typewriter
-                    options={{
-                      strings: [
-                        'Patyriminė terapinė grupė',
-                        'Šilumą ir šviesą',
-                        'Lorem ipsum si',
-                        'Kažkoks tekstas dar',
-                      ],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  /> */}
                   "Pajautos ratas"
                 </h2>
                 {/* <a
@@ -56,7 +43,9 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                   className='btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2'
                   onClick={(e) => {
                     e.preventDefault();
-                    handleNavClick('contact');
+                    l
+                    
+                    ('contact');
                   }}
                 >
                   Hire Me

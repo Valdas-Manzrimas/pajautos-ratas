@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
-import { Tooltip } from './Tooltip';
 
 const Contact = ({ classicHeader, darkTheme }) => {
   const form = useRef();
@@ -57,7 +56,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
       id='contact'
       className={'section ' + (darkTheme ? 'bg-dark-2' : 'bg-light')}
     >
-      <div className={'container ' + (classicHeader ? '' : 'px-lg-5')}>
+      <div className={'container ' + (classicHeader ? '' : 'px-lg-6')}>
         {/* Heading */}
         <div className='position-relative d-flex text-center mb-5'>
           <h2
