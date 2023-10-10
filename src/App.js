@@ -12,6 +12,8 @@ import TermsAndConditions from './components/TermsAndConditions';
 import Disclaimer from './components/Disclaimer';
 import PreLoader from './components/Preloader';
 import { Tooltip } from './components/Tooltip';
+import GroupEvents from './components/GroupEvents';
+import Individual from './components/Individual';
 
 function App() {
   const classicHeader = commonConfig.classicHeader;
@@ -69,6 +71,8 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Services>
+            <GroupEvents classicHeader={classicHeader} darkTheme={darkTheme} />
+            <Individual classicHeader={classicHeader} darkTheme={darkTheme} />
             <AboutUs
               classicHeader={classicHeader}
               darkTheme={darkTheme}

@@ -7,21 +7,25 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
     {
       name: 'Kažkoks žmogus',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci culpa, sunt corporis aspernatur aliquid cumque voluptas nesciunt fugit commodi, eveniet reprehenderit nemo eum nulla laborum nobis esse explicabo. Natus?',
+      service: 'Kvėpavimo terapija',
       rating: 5,
     },
     {
       name: 'Valdas Manzrimas',
       desc: 'Nuostabūs šviesūs žmonės, paskyrę savo gyvenimą sąmoningumui, meilei ir švietimui. Rekomenduoju dalyvauti Dalios ir Aurimo užsiėmimuose, nes jie padeda sugrįžti į save bei tapti laimingu.',
+      service: 'Empatiškas bendravimas',
       rating: 5,
     },
     {
       name: 'Vardas Pavardenis',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, culpa. Soluta neque labore culpa, ratione laborum facere officiis libero at',
+      service: 'Empatiškas bendravimas',
       rating: 5,
     },
     {
       name: 'John Doe',
       desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum dolorum quam maxime iure, adipisci amet eaque, facilis cum accusamus officiis esse ea sapiente dolor eveniet',
+      service: 'Kūno terapija',
       rating: 5,
     },
   ];
@@ -54,7 +58,7 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
         <div className='position-relative d-flex text-center mb-5'>
           <h2
             className={
-              'text-24  text-uppercase fw-600 w-100 mb-0 ' +
+              'text-20  text-uppercase fw-600 w-100 mb-0 ' +
               (darkTheme ? 'text-muted opacity-1' : 'text-light opacity-4')
             }
           >
@@ -82,7 +86,7 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
                     ' rounded p-5 ' + (darkTheme ? 'bg-dark' : 'bg-light')
                   }
                 >
-                  <div className='d-flex align-items-center mt-auto mb-4'>
+                  <div className='d-flex align-items-center justify-content-between mt-auto mb-4'>
                     <p className='mb-0'>
                       <strong
                         className={
@@ -93,6 +97,7 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
                         {value.name}
                       </strong>
                     </p>
+                    <h6 className='text-light m-0'>{value.service}</h6>
                   </div>
                   <p
                     className={
@@ -101,11 +106,11 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
                   >
                     “{value.desc}”
                   </p>
-                  <span className='text-2'>
+                  {/* <span className='text-2'>
                     {[...Array(value.rating)].map((value, i) => (
                       <i className='fas fa-star text-warning' key={i} />
                     ))}
-                  </span>
+                  </span> */}
                 </div>
               </div>
             ))}

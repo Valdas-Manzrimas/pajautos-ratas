@@ -61,7 +61,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
         <div className='position-relative d-flex text-center mb-5'>
           <h2
             className={
-              'text-24  text-uppercase fw-600 w-100 mb-0 ' +
+              'text-20  text-uppercase fw-600 w-100 mb-0 ' +
               (darkTheme ? 'text-muted opacity-1' : 'text-light opacity-4')
             }
           >

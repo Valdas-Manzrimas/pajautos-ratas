@@ -31,8 +31,9 @@ const ClassicHeader = () => {
       {/* Navbar */}
       <nav
         className={
-          'primary-menu navbar navbar-expand-lg navbar-dark bg-transparent border-bottom-0 sticky-top ' +
-          (stickyHeader ? 'sticky-on' : '')
+          'primary-menu navbar navbar-expand-lg border-bottom-0 sticky-top ' +
+          (stickyHeader ? 'sticky-on navbar-light' : '') +
+          (isNavModalClose && !stickyHeader ? 'bg-transparent' : 'navbar-light')
         }
       >
         <div className='container-fluid position-relative g-lg-4'>
@@ -85,14 +86,14 @@ const ClassicHeader = () => {
               }
             >
               <ul className='navbar-nav'>
-                <li className='nav-item'>
+                <li className='nav-item '>
                   <Link
                     smooth
                     duration={500}
                     style={{ cursor: 'pointer' }}
                     spy
                     activeClass='active'
-                    className='nav-link'
+                    className={'nav-link ' + (stickyHeader ? '' : 'text-light')}
                     to='services'
                     onClick={(e) => {
                       e.preventDefault();
@@ -102,6 +103,40 @@ const ClassicHeader = () => {
                     Mūsų veikla
                   </Link>
                 </li>
+                <li className='nav-item '>
+                  <Link
+                    smooth
+                    duration={500}
+                    style={{ cursor: 'pointer' }}
+                    spy
+                    activeClass='active'
+                    className={'nav-link ' + (stickyHeader ? '' : 'text-light')}
+                    to='groupEvents'
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsNavModalClose(true);
+                    }}
+                  >
+                    Veikla grupėse
+                  </Link>
+                </li>
+                <li className='nav-item '>
+                  <Link
+                    smooth
+                    duration={500}
+                    style={{ cursor: 'pointer' }}
+                    spy
+                    activeClass='active'
+                    className={'nav-link ' + (stickyHeader ? '' : 'text-light')}
+                    to='individual'
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsNavModalClose(true);
+                    }}
+                  >
+                    Individualios konsultacijos
+                  </Link>
+                </li>
                 <li className='nav-item'>
                   <Link
                     smooth
@@ -109,7 +144,7 @@ const ClassicHeader = () => {
                     style={{ cursor: 'pointer' }}
                     spy
                     activeClass='active'
-                    className='nav-link'
+                    className={'nav-link ' + (stickyHeader ? '' : 'text-light')}
                     to='about'
                     onClick={(e) => {
                       e.preventDefault();
@@ -126,7 +161,7 @@ const ClassicHeader = () => {
                     style={{ cursor: 'pointer' }}
                     spy
                     activeClass='active'
-                    className='nav-link'
+                    className={'nav-link ' + (stickyHeader ? '' : 'text-light')}
                     to='testimonial'
                     onClick={(e) => {
                       e.preventDefault();
@@ -142,7 +177,7 @@ const ClassicHeader = () => {
                     duration={500}
                     style={{ cursor: 'pointer' }}
                     spy
-                    className='nav-link'
+                    className={'nav-link ' + (stickyHeader ? '' : 'text-light')}
                     activeClass='active'
                     to='contact'
                     onClick={(e) => {

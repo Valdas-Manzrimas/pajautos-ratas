@@ -185,13 +185,44 @@ html[dir='rtl'] .featured-box:not(.style-4) {
   @include transition(all 0.3s ease-in-out);
 }
 
-/*=== 5.2 Team ===*/
+/*=== 5.2 Team/About us ===*/
+#about {
+  .container {
+    @media (max-width: 1100px) {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+}
+
+.about-content-container {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  & > div {
+    padding: 0 1.5rem;
+
+    &:first-child {
+      @media (max-width: 767px) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+
+    & > div {
+      padding: 0;
+    }
+  }
+}
 
 .team {
   text-align: center;
   max-height: 350px;
-  width: 90%;
-  height: -webkit-fill-available;
   overflow: hidden;
   margin-bottom: 1.5rem;
   .team-img {
@@ -229,6 +260,59 @@ html[dir='rtl'] .featured-box:not(.style-4) {
   }
   .team-details {
     padding: 1.5rem 0;
+  }
+}
+
+// Group activities section
+.groups-section {
+  min-height: fit-content;
+
+  .groups-content {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+    @media (max-width: 915px) {
+      :first-child {
+        margin-top: 1rem;
+      }
+    }
+
+    @media (max-width: 450px) {
+      grid-template-columns: 1fr;
+
+      :first-child {
+        margin-top: 0.5rem;
+      }
+    }
+
+    .groups-image-container {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 915px) {
+        order: -1;
+        height: min-content;
+      }
+
+      .groups-image {
+        width: 100%;
+        height: 100%;
+        height: auto;
+        position: relative;
+
+        @media (min-width: 550px) and (max-width: 915px) {
+          height: 450px;
+          overflow: hidden;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
 

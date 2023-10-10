@@ -28,9 +28,9 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
           </p>
         </div>
         {/* Heading end*/}
-        <div className='gy-5 d-flex'>
+        <div className='gy-5 about-content-container'>
           {/* About me content start */}
-          <div className='d-flex flex-column align-items-center w-50'>
+          <div className='d-flex flex-column align-items-center'>
             <div className='team'>
               <img
                 src='images/Dalia_profilis.png'
@@ -38,7 +38,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 className=' img-fluid img-responsive'
               />
             </div>
-            <div className='col-lg-9 col-xl-9 text-center text-lg-start'>
+            <div className='text-center text-lg-start'>
               <p className={darkTheme ? 'text-white-50' : ''}>
                 <span className='text-primary text-5'>Dalia Eigėlienė</span> -
                 Integruotos kūno ir judesio terapijos (Integrative Body and
@@ -46,10 +46,19 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 kvėpavimo terapeutė (Kvėpavimo terapijos centras), taip pat
                 turinti medicininį išsilavinimą.
               </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                molestiae placeat officia provident quasi ad quidem, itaque,
+                nihil, eligendi reprehenderit laudantium quisquam ipsa porro?
+                Culpa asperiores voluptatem minima. Molestiae veritatis nisi
+                sapiente quibusdam eveniet maxime, obcaecati voluptatibus amet
+                repellendus! Quaerat pariatur sint doloremque laboriosam ipsa
+                voluptatibus doloribus ut! Vitae, neque.
+              </p>
             </div>
           </div>
 
-          <div className='d-flex flex-column align-items-center w-50'>
+          <div className='d-flex flex-column align-items-center'>
             <div className='team'>
               <img
                 src='images/Aurimas_profilis.png'
@@ -57,7 +66,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 className='img-fluid img-responsive'
               />
             </div>
-            <div className='col-lg-9 col-xl-9 text-center text-lg-start'>
+            <div className='text-center text-lg-start'>
               <p className={darkTheme ? 'text-white-50' : ''}>
                 <span className='text-primary text-5'>Aurimas Radkevičius</span>{' '}
                 - sertifikuotas nesmurtinės komunikacijos (Nonviolent
@@ -65,6 +74,12 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 empatijos” asistentas, „Vidinio džiaugsmo ir tylos retrito”
                 bendraautorius ir vedantysis, mokymosi namų „Patirčių slėnis”
                 mentorius, vidinio augimo grupės vyrams „Tikras” dalyvis.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                asperiores odio consequuntur sit error quos officiis eveniet
+                consequatur sunt veniam, aliquam aut veritatis animi nobis ut
+                cumque debitis minus. Cupiditate?
               </p>
             </div>
           </div>

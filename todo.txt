@@ -1,0 +1,6 @@
+In cards component make scroll to container top when service-mask element is turned on.
+DONE - Navigation color = white
+DONE - Set mobile navbar color when burger is opened
+Mobile horizontal screen landing video full height
+Mobile horizontal decrease nav height
+DONE - Add 2 more sections

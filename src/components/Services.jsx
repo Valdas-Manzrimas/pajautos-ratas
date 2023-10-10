@@ -49,7 +49,7 @@ const Services = ({ classicHeader, darkTheme }) => {
                 setIsOverlay(false);
               }}
             ></i>
-            <div className=' pic-container'>
+            <div className='pic-container'>
               <img
                 className='img-responsive'
                 src={cardContent[cardElement].picture}
@@ -138,8 +138,7 @@ const Services = ({ classicHeader, darkTheme }) => {
               <h2 className='title text-light'>Kūno terapija</h2>
               <p className='copy'>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                quae repellat facere inventore autem nisi soluta reiciendis
-                voluptatum laudantium nam!
+                quae repellat facere inventore autem.
               </p>
               <button
                 className='btn'
