@@ -23,7 +23,7 @@ const Individual = ({ classicHeader, darkTheme }) => {
               (darkTheme ? 'text-white' : 'text-dark')
             }
           >
-            Individualios konsultacijos
+            Terapinės grupės
             <span className='heading-separator-line border-bottom border-3 border-primary d-block mx-auto' />
           </p>
         </div>
